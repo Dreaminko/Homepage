@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="renderer" content="webkit">
+	<title>梦墨's HomePage</title>
+	<meta name="keywords" content="Homepage">
+	<meta name="description" content="梦墨's Homepage">
+	<link rel="icon" type="image/ico" href="./assests/icons/favicon.ico">
+
+	<style>
+		.left{width: 50%}
+		.right{width: 50%}
+	</style>
+
+	<link rel="stylesheet" id="style-css" href="./assests/css/style.css" type="text/css" media="all">
+
+	<script type="text/javascript" src="./assests/js/jquery.min.js"></script>
+	<script type="text/javascript" src="./assests/js/js.js"></script>
+
+	<!-- 自定义加载进度条 -->
+	<script src="./assests/js/pace.min.js"></script>
+	
+	<!-- 自定义鼠标指针 -->
+    <script defer type="text/javascript" src="./assests/js/mouse.js"></script>
+	
+	<!-- 网站运行时间 -->
+	<script>
+    function show_runtime() {window.setTimeout("show_runtime()",1000); X=new Date("11/12/2021 11:45:14"); Y=new Date(); T=(Y.getTime()-X.getTime()); M=24*60*60*1000; a=T/M;A=Math.floor(a); b=(a-A)*24;B=Math.floor(b); c=(b-B)*60;C=Math.floor((b-B)*60); D=Math.floor((c-C)*60); runtime_span.innerHTML="本站已运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();  Date("01/01/2020 11:45:14") 
+    </script>
+    
+    <!-- 控制台字符画 -->
+    <script defer type="text/javascript" src="./assests/js/console.js"></script>
+
+	<!-- 当前时间 -->
+	<script src="./assests/js/time.js"></script>
+
+	<!-- MDUI -->
+	<link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+	<script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+	
+</head>
+
+<body class="home blog">
+	<div class="wrapper">
+		<section class="left" style="background-image: url('./assests/images/background.jpg');">
+		</section>
+			<section class="right">
+		<div class="index_box">
+	<div class="index_txt">
+		<img src="./assests/images/avatar.png" alt="只是一個普通的頭像。">
+		<h1>梦墨不会做梦💤</h1>
+		<p>May you do good<br>and not evil.</p>
+
+		<div class="location">
+			<i class="ico_map"></i>
+			Fujian, China
+		</div>
+
+		<br>
+
+		<div class="time">
+			<i class="ico_time"></i>
+			<span id="beijingTime"></span>
+		</div>
+
+		<div class="menu">
+			<mdui-dropdown trigger="click" stay-open-on-click placement="bottom">
+				<mdui-button slot="trigger" variant="elevated">Find Me</mdui-button>
+				<mdui-menu>
+					<mdui-menu-item href="https://xlog.dreamo.ink" target="_blank"> Blog </mdui-menu-item>
+					<mdui-menu-item href="https://x.com/Dreaminko_" target="_blank"> X </mdui-menu-item>
+					<mdui-menu-item href="https://t.me/Dreaminko" target="_blank"> Telegram </mdui-menu-item>
+					<mdui-menu-item href="https://github.com/Dreamink0" target="_blank"> GitHub </mdui-menu-item>
+				</mdui-menu>
+			</mdui-dropdown>
+		</div>
+	</div>
+</div>
+
+<footer class="right_foot">
+	<div class="right_f_l">
+		<p>
+			<span>© 2022 <a href="https://icp.gov.moe/?keyword=2020060315" target="_blank">萌ICP备 2020060315 号</a></span>
+			<a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">/&ensp;Travellings&ensp;/&ensp;</a>
+		    <span id="runtime_span"></span>
+		</p>
+	</div>
+</footer>
+
+</section><!--right-->
+</div><!--wrapper-->
+</body>
+</html>
