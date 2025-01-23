@@ -286,7 +286,7 @@ ul, ol {
     background-size: cover;
     display: block;
     background-position: 50% 0;
-    background-color: #000
+    background-color: #ffffff
 }
 
 .right {
@@ -405,13 +405,13 @@ ul, ol {
     margin-top: -8px
 }
 
-.index_txt .time{
+.index_txt .time {
     line-height: 1.8;
     font-size: 18px;
     display: inline-block;
 }
 
-.index_txt .time i{
+.index_txt .time i {
     margin-right: 90px;
     vertical-align: middle;
     background-image: url(../icons/time.svg);
@@ -422,7 +422,7 @@ ul, ol {
     margin-top: -8px;
 }
 
-.index_txt .time span{
+.index_txt .time span {
     position: absolute;
     margin-left: -51px;
     font-size: 18px;
@@ -451,7 +451,7 @@ ul, ol {
 .index_nav li a {
 }
 
-.inline-element{
+.inline-element {
     font-size: 16px;
     font-family: suranna, Arial, serif
 }
