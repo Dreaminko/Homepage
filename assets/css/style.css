@@ -87,6 +87,11 @@
     background-size: 200%;
 }
 
+/*animate.css*/
+:root {
+    --animate-delay: 0.1s;
+}
+
 * {
     box-sizing: border-box
 }
@@ -370,7 +375,7 @@ ul, ol {
 .index_txt img {
     border-radius: 50%;
     width: 140px;
-    height: 140px
+    height: 140px;
 }
 
 .index_txt h1 {
