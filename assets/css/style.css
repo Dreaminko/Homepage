@@ -1,11 +1,11 @@
 /*自定义字体*/
 @font-face {
-    font-family: Source Han Serif CN VF;
+    font-family: KingHwa_OldSong;
     font-weight: 1000;
 }
 
 * {
-    font-family: Source Han Serif CN VF;
+    font-family: KingHwa_OldSong;
     font-weight: 1000;
 }
 
