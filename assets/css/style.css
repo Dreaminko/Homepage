@@ -1,14 +1,12 @@
 /*自定义字体*/
 @font-face {
-    font-family: Smiley Sans;
-    font-style: italic;
-    font-display: swap;
-    src: url('../fonts/SmileySans-Oblique.woff2') format('woff2'),
-    url('../fonts/SmileySans-Oblique.woff') format('woff');
+    font-family: Source Han Serif CN VF;
+    font-weight: 1000;
 }
 
 * {
-    font-family: Smiley Sans, sans-serif;
+    font-family: Source Han Serif CN VF;
+    font-weight: 1000;
 }
 
 /*自定义鼠标指针*/
@@ -134,6 +132,10 @@ p {
 h1 {
     font-size: 2em;
     margin: .67em 0
+}
+
+h2 {
+    margin: 0 0 10px
 }
 
 sub, sup {
@@ -380,7 +382,13 @@ ul, ol {
 
 .index_txt h1 {
     font-size: 35px;
-    margin: 20px 0
+    margin: 12px 0
+}
+
+.index_txt h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 5px 0 10px 0;
 }
 
 .index_txt p {
@@ -395,6 +403,7 @@ ul, ol {
     color: #3c3c3c;
     line-height: 1.8;
     font-size: 18px;
+    font-weight: 500;
     align-items: center;
     display: inline-block;
 }
@@ -417,7 +426,7 @@ ul, ol {
 }
 
 .index_txt .time i {
-    margin-right: 90px;
+    margin-right: 128px;
     vertical-align: middle;
     background-image: url(../icons/time.svg);
     background-size: 100%;
@@ -429,8 +438,9 @@ ul, ol {
 
 .index_txt .time span {
     position: absolute;
-    margin-left: -51px;
+    margin-left: -67px;
     font-size: 18px;
+    font-weight: 500;
     line-height: 32px;
 }
 
