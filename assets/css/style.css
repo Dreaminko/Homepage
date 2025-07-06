@@ -762,18 +762,6 @@ ul, ol {
     margin-right: 3px
 }
 
-.single_info span i.ico_cat {
-    background-image: url(../icons/cat.svg);
-    width: 18px;
-    height: 12px
-}
-
-.single_info span i.ico_view {
-    background-image: url(../icons/view.svg);
-    width: 12px;
-    height: 12px
-}
-
 .single_info span a {
     color: #898989
 }
