@@ -1,19 +1,47 @@
 function updateBeijingTime() {
-    // 获取当前 UTC 时间
     let now = new Date();
-    // 计算北京时间 (UTC+8)
+
     let beijingTime = new Date(now.getTime() + (8 * 60 * 60 * 1000));
 
-    // 格式化小时、分钟、秒
     let hours = String(beijingTime.getUTCHours()).padStart(2, '0');
     let minutes = String(beijingTime.getUTCMinutes()).padStart(2, '0');
     let seconds = String(beijingTime.getUTCSeconds()).padStart(2, '0');
-    // 更新页面上的时间
-    document.getElementById('beijingTime').textContent = `${hours}:${minutes}:${seconds}`;
+
+    const beijingTimeSpan = document.getElementById('beijingTime');
+    if (beijingTimeSpan) {
+        beijingTimeSpan.textContent = `${hours}:${minutes}:${seconds}`;
+    }
 }
 
-// 每秒钟更新一次时间
-setInterval(updateBeijingTime, 1000);
+function show_runtime() {
+    const startDate = new Date("11/12/2021 11:45:14").getTime(); // Get timestamp (milliseconds)
 
-// 页面加载时，立即显示一次时间
-updateBeijingTime();
+    const updateDisplay = () => {
+        const now = new Date().getTime();
+        let diff = now - startDate;
+
+        if (diff < 0) {
+            diff = 0;
+        }
+
+        const seconds = Math.floor(diff / 1000);
+        const days = Math.floor(seconds / (24 * 60 * 60));
+        const hours = Math.floor((seconds % (24 * 60 * 60)) / (60 * 60));
+        const minutes = Math.floor(((seconds % (24 * 60 * 60)) % (60 * 60)) / 60);
+        const remainingSeconds = seconds % 60;
+
+        const runtimeSpan = document.getElementById("runtime_span");
+        if (runtimeSpan) {
+            runtimeSpan.innerHTML = `本站已運行: ${days} 天 ${hours} 小時 ${minutes} 分 ${remainingSeconds} 秒`;
+        }
+    };
+
+    updateDisplay();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateBeijingTime();
+    setInterval(updateBeijingTime, 1000);
+    show_runtime();
+    setInterval(show_runtime, 1000);
+});

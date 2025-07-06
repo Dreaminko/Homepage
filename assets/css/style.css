@@ -293,11 +293,13 @@ ul, ol {
     background-size: cover;
     display: block;
     background-position: 50% 0;
+    width: 50%;
     background-color: #ffffff
 }
 
 .right {
-    float: right
+    float: right;
+    width: 50%
 }
 
 @media (max-width: 768px) {
