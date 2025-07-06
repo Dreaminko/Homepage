@@ -1139,3 +1139,21 @@ ul, ol {
     overflow-x: hidden;
     overflow-y: hidden
 }
+
+.exif {
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    left: 0px;
+    margin: 0;
+    opacity: 0.5;
+}
+
+.exif p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    font-family: 'Courier New', monospace;
+    font-weight: 400;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
