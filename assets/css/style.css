@@ -323,3 +323,17 @@ img {
     font-weight: 400;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
+
+.menu-row-1 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.menu-row-2 {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
