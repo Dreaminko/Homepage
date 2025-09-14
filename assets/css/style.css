@@ -328,12 +328,12 @@ img {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 .menu-row-2 {
     display: flex;
     justify-content: center;
     gap: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
