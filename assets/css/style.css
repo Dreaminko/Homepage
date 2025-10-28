@@ -109,6 +109,7 @@ a {
 }
 
 a:active, a:hover {
+    transition: color 0.5s;
     color: #39c5bb;
     outline: 0;
     text-decoration: none
