@@ -10,6 +10,7 @@ function setRandomBackground() {
         '002.jpg',
         '003.jpg',
         '004.jpg',
+        '005.jpg',
     ];
 
     const randomIndex = Math.floor(Math.random() * backgroundImages.length);
