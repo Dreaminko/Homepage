@@ -1,106 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta name="renderer" content="webkit" />
+        <title>梦墨's HomePage</title>
+        <meta name="keywords" content="Homepage" />
+        <meta name="description" content="梦墨's Homepage" />
+        <link rel="icon" type="image/ico" href="./assets/icons/favicon.ico" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit">
-    <title>梦墨's HomePage</title>
-    <meta name="keywords" content="Homepage">
-    <meta name="description" content="梦墨's Homepage">
-    <link rel="icon" type="image/ico" href="./assets/icons/favicon.ico">
+        <link
+            rel="stylesheet"
+            id="style-css"
+            href="./assets/css/style.css"
+            type="text/css"
+            media="all"
+        />
 
-    <link rel="stylesheet" id="style-css" href="./assets/css/style.css" type="text/css" media="all">
+        <script>
+            function discord() {
+                alert("@Dreaminko");
+            }
+        </script>
 
-    <script>
-        function discord(){
-            alert('@Dreaminko')
-        }
-    </script>
-    
-    <!-- 自定义加载进度条 -->
-    <script src="./assets/js/pace.min.js"></script>
+        <!-- 自定义加载进度条 -->
+        <script src="./assets/js/pace.min.js"></script>
 
-    <!-- 自定义鼠标指针 -->
-    <script defer type="text/javascript" src="./assets/js/mouse.js"></script>
+        <!-- 自定义鼠标指针 -->
+        <script
+            defer
+            type="text/javascript"
+            src="./assets/js/mouse.js"
+        ></script>
 
-    <!-- 控制台字符画 -->
-    <script defer type="text/javascript" src="./assets/js/console.js"></script>
+        <!-- 控制台字符画 -->
+        <script
+            defer
+            type="text/javascript"
+            src="./assets/js/console.js"
+        ></script>
 
-    <!-- 时间相关 -->
-    <script src="./assets/js/time.js"></script>
+        <!-- 时间相关 -->
+        <script src="./assets/js/time.js"></script>
 
-    <!-- FontAwesome -->
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/brands.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/solid.min.css" rel="stylesheet">
+        <!-- FontAwesome -->
+        <link
+            href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/brands.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/solid.min.css"
+            rel="stylesheet"
+        />
 
-    <!-- Animate.css -->
-    <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <!-- Animate.css -->
+        <link
+            href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css"
+            rel="stylesheet"
+        />
 
-    <!-- exif-js -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
-    <script src="./assets/js/background.js"></script>
+        <!-- exif-js -->
+        <script src="https://cdn.bootcdn.net/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
+        <script src="./assets/js/background.js"></script>
 
-    <!-- 字图CDN - 京華老宋體 -->
-    <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/jhlst/dist/%E4%BA%AC%E8%8F%AF%E8%80%81%E5%AE%8B%E4%BD%93v2_002/result.css' />
-</head>
+        <!-- 字图CDN - 京華老宋體 -->
+        <link
+            rel="stylesheet"
+            href="https://chinese-fonts-cdn.deno.dev/packages/jhlst/dist/京華老宋体v1_007/result.css"
+        />
+    </head>
 
-<body class="home blog">
-<div class="wrapper">
-    <section class="left">
-        <div class="exif">
-            <p></p>
-        </div>
-    </section>
-    <section class="right">
-        <div class="index_box">
-            <div class="index_txt">
-                <img src="./assets/images/avatar_new.png" alt="只是一个普通的头像。" class="animate__animated animate__fadeInUp animate__fast">
-                <h1 class="animate__animated animate__fadeIn animate__fast animate__delay-1s">夢墨不會做夢</h1>
-                <h2 class="animate__animated animate__fadeIn animate__fast animate__delay-1s">願你行善不作惡</h2>
-
-                <div class="location animate__animated animate__fadeIn animate__fast animate__delay-2s">
-                    <i class="ico_map"></i>
-                    Fujian, China
+    <body class="home blog">
+        <div class="wrapper">
+            <section class="left">
+                <div class="exif">
+                    <p></p>
                 </div>
+            </section>
+            <section class="right">
+                <div class="index_box">
+                    <div class="index_txt">
+                        <img
+                            src="./assets/images/avatar_new.png"
+                            alt="只是一个普通的头像。"
+                            class="animate__animated animate__fadeInUp animate__fast"
+                        />
+                        <h1
+                            class="animate__animated animate__fadeIn animate__fast animate__delay-1s"
+                        >
+                            夢墨不會做夢
+                        </h1>
+                        <h2
+                            class="animate__animated animate__fadeIn animate__fast animate__delay-1s"
+                        >
+                            願你行善不作惡
+                        </h2>
 
-                <br>
-
-                <div class="time animate__animated animate__fadeIn animate__fast animate__delay-2s">
-                    <i class="ico_time"></i>
-                    <span id="beijingTime"></span>
-                </div>
-
-                <div class="menu animate__animated animate__fadeIn animate__delay-3s">
-                        <div class="menu-row-1">
-                            <a href="https://dreaminko.notion.site" target="_blank"><i class="fa-solid fa-pen fa-xl"></i></a>
-                            <a href="https://github.com/Dreaminko" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-                            <a href="https://x.com/Dreaminko_" target="_blank"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                        <div
+                            class="location animate__animated animate__fadeIn animate__fast animate__delay-2s"
+                        >
+                            <i class="ico_map"></i>
+                            Fujian, China
                         </div>
-                        <div class="menu-row-2">
-                            <a href="https://t.me/Dreaminko" target="_blank"><i class="fa-brands fa-telegram fa-xl"></i></a>
-                            <a onclick="discord()"><i class="fa-brands fa-discord fa-xl"></i></a>
-                            <a href="mailto:i@dreamo.ink"><i class="fa-solid fa-envelope fa-xl"></i></a>
+
+                        <br />
+
+                        <div
+                            class="time animate__animated animate__fadeIn animate__fast animate__delay-2s"
+                        >
+                            <i class="ico_time"></i>
+                            <span id="beijingTime"></span>
                         </div>
+
+                        <div
+                            class="menu animate__animated animate__fadeIn animate__delay-3s"
+                        >
+                            <div class="menu-row-1">
+                                <a
+                                    href="https://dreaminko.notion.site"
+                                    target="_blank"
+                                    ><i class="fa-solid fa-pen fa-xl"></i
+                                ></a>
+                                <a
+                                    href="https://github.com/Dreaminko"
+                                    target="_blank"
+                                    ><i class="fa-brands fa-github fa-xl"></i
+                                ></a>
+                                <a
+                                    href="https://x.com/Dreaminko_"
+                                    target="_blank"
+                                    ><i class="fa-brands fa-x-twitter fa-xl"></i
+                                ></a>
+                            </div>
+                            <div class="menu-row-2">
+                                <a href="https://t.me/Dreaminko" target="_blank"
+                                    ><i class="fa-brands fa-telegram fa-xl"></i
+                                ></a>
+                                <a onclick="discord()"
+                                    ><i class="fa-brands fa-discord fa-xl"></i
+                                ></a>
+                                <a href="mailto:i@dreamo.ink"
+                                    ><i class="fa-solid fa-envelope fa-xl"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+                <footer class="right_foot">
+                    <div class="right_f_l">
+                        <p>
+                            <span
+                                >© 2025
+                                <a
+                                    href="https://icp.gov.moe/?keyword=2020060315"
+                                    target="_blank"
+                                    >萌 ICP 備 2020060315 號</a
+                                ></span
+                            >
+                            <a
+                                href="https://www.travellings.cn/go.html"
+                                target="_blank"
+                                rel="noopener"
+                                title="开往-友链接力"
+                                >/&ensp;Travellings&ensp;/&ensp;</a
+                            >
+                            <span id="runtime_span"></span>
+                        </p>
+                    </div>
+                </footer>
+            </section>
         </div>
-
-        <footer class="right_foot">
-            <div class="right_f_l">
-                <p>
-                    <span>© 2025 <a href="https://icp.gov.moe/?keyword=2020060315"
-                                    target="_blank">萌 ICP 備 2020060315 號</a></span>
-                    <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">/&ensp;Travellings&ensp;/&ensp;</a>
-                    <span id="runtime_span"></span>
-                </p>
-            </div>
-        </footer>
-
-    </section>
-</div>
-</body>
+    </body>
 </html>
