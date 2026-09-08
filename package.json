@@ -11,7 +11,7 @@
     "predev": "npm run prepare:assets",
     "dev": "vite --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types --test src/lib/time.test.ts",
+    "test": "node --experimental-strip-types --test src/lib/time.test.ts scripts/prepare-assets.test.mjs",
     "build": "npm run prepare:assets && npm run typecheck && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "preview:cloudflare": "wrangler dev --ip 127.0.0.1",

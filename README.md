@@ -24,15 +24,15 @@ npm run preview
 ## 内容维护
 
 - `src/config.ts`：个人介绍、链接、Discord 用户名、运行起始日期。
-- `src/components/`：摄影、社交入口。
+- `src/components/`：摄影、社交入口和时间组件；每秒更新时间时不会触发整个主页重新渲染。
 - `src/style.css`：延续原站分栏与移动端个人名片布局。
-- `assets/images/Background/*.jpg`：原始摄影图片，文件名作为照片标识。
-- `assets/images/avatar_new.png`：头像原图。
-- `scripts/prepare-assets.mjs`：生成 960／1920 像素 WebP、头像和 EXIF 展示数据。优化图片不携带原始 EXIF；旧图片 URL 为兼容目的仍提供原图。
+- `assets/images/Background/`：原始摄影图片，支持 JPG、JPEG、PNG、WebP。没有照片时不显示摄影区域。
+- `assets/images/avatar.png`：头像原图，构建时生成 WebP 并使用带内容哈希的地址，更新头像后避免沿用旧缓存。
+- `scripts/prepare-assets.mjs`：生成最长为目标宽度 960／1920 像素的 WebP（小图不放大）、头像和 EXIF 展示数据。每张图只解析一次 EXIF；背景图地址带内容哈希，可长期缓存。优化图片不携带原始 EXIF；源目录中仍存在的原图继续提供原路径访问。按源文件内容哈希缓存于 `.cache/prepare-assets/`（不提交 Git），源图未变化时跳过重新解析与压缩；替换或删除源图后自动重新生成并清理不再引用的缓存文件。
 - `404.html`、`502.html`：原错误页源文件，构建时移除外部字体请求再复制到输出。
 - `assets/js/`、`assets/css/`：保留作迁移参考，React 入口不再加载，也不复制到部署目录。
 
-生成的 `public/photos/`、`public/assets/` 和 `src/generated/` 不提交 Git。首次独立运行类型检查前需要 `npm run prepare:assets`。
+生成的 `public/photos/`、`public/assets/` 和 `src/generated/` 不提交 Git，每次生成前自动清理；不要在这些目录手工保存文件。源目录删除的图片不会残留在下次构建中。首次独立运行类型检查前需要 `npm run prepare:assets`。
 
 日期原值 `11/12/2021 11:45:14` 现明确为 `2021-11-12T11:45:14+08:00`，按原 JavaScript 月／日解析习惯解释；如实际建站日期不同，在配置里修正。
 

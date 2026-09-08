@@ -9,3 +9,4 @@ public/photos/
 public/404.html
 public/502.html
 src/generated/
+.cache/
