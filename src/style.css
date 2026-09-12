@@ -291,12 +291,10 @@ img {
 
 /* React adaptations: preserve the static site's layout and visual values. */
 a:focus-visible, button:focus-visible { outline: 2px solid #39c5bb; outline-offset: 5px; }
-.menu { position: relative; }
 .menu button { appearance: none; background: none; border: 0; padding: 0; margin: 0; color: #000; font: inherit; cursor: pointer; }
 .menu button:hover, .menu button:active { color: #39c5bb; transition: color .5s; }
 .menu .social-icon { display: inline-block; font-size: 27px; line-height: .04167em; vertical-align: -.125em; }
 .social-icon svg { height: 1em; width: auto; fill: currentColor; overflow: visible; }
-.copy-status { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); width: max-content; max-width: 90vw; margin: 0; font-size: 14px; font-weight: 500; }
 .background-photo { width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; }
 .background-photo.ready { opacity: 1; }
 .photo-error { position: absolute; top: 45%; width: 100%; text-align: center; }

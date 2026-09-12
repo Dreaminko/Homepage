@@ -5,8 +5,8 @@ dist/
 .env*
 .dev.vars*
 public/assets/
-public/photos/
 public/404.html
 public/502.html
 src/generated/
 .cache/
+README.md

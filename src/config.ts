@@ -1,5 +1,5 @@
 export const profile = {
-  name: '夢墨不會做夢',
+  name: 'ゆめ',
   motto: '願你行善不作惡',
   location: 'Fujian, China',
   discord: '@Dreaminko',
@@ -8,8 +8,8 @@ export const profile = {
   links: {
     notion: 'https://dreaminko.notion.site',
     github: 'https://github.com/Dreaminko',
-    x: 'https://x.com/Dreaminko_',
-    telegram: 'https://t.me/Dreaminko',
+    x: 'https://x.com/yume_sum1 ',
+    telegram: 'https://t.me/yume_sum1',
     music: 'https://music.dreamo.ink',
     icp: 'https://icp.gov.moe/?keyword=2020060315',
     travellings: 'https://www.travellings.cn/go.html',
