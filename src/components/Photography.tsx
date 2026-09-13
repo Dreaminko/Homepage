@@ -20,7 +20,7 @@ function DesktopPhotography({ photo }: { photo: Photo }) {
   return <aside className="left" aria-label="摄影背景">
     {state === 'loading' && <div className="pace" role="status" aria-label="正在加载照片"><div className="pace-progress" style={{ right: '20%' }} /></div>}
     <img className={`background-photo ${state === 'ready' ? 'ready' : ''}`} src={photo.src} alt="ゆめ的摄影作品" fetchPriority="high" onLoad={() => setState('ready')} onError={() => setState('error')} />
-    {state === 'ready' && <div className="exif"><p>{photo.lines.length ? photo.lines.map((line, i) => <span key={i} style={{ font: 'inherit' }}>{line}<br /></span>) : '暂无拍摄信息'}</p></div>}
+    {state === 'ready' && <div className="exif"><p>{photo.lines.length ? photo.lines.map((line, i) => <span key={i}>{line}<br /></span>) : '暂无拍摄信息'}</p></div>}
     {state === 'error' && <p className="photo-error">照片暂时无法加载</p>}
   </aside>;
 }
