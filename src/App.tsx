@@ -11,7 +11,7 @@ export default function App() {
       <main className="index_box">
         <div className="index_txt">
           <img className="avatar animate fade-up fast" src={avatar} alt="ゆめ" width="140" height="140" />
-          <h1 className="animate fade-in fast delay-1">{profile.name}</h1>
+          <h1 lang="ja" className="animate fade-in fast delay-1">{profile.name}</h1>
           <h2 className="animate fade-in fast delay-1">{profile.motto}</h2>
           <div className="meta">
             <div className="location animate fade-in fast delay-2"><i aria-hidden="true" />{' ' }{profile.location}</div>

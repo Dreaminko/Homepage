@@ -1,3 +1,5 @@
+@import '../assets/fonts/noto-serif.css';
+
 /*自定义加载进度条*/
 .pace {
     pointer-events: none;
@@ -48,9 +50,13 @@
 }
 
 * {
-    font-family: 'Songti SC', 'Noto Serif CJK SC', 'SimSun', serif;
-    font-weight: 1000;
+    font-family: 'Noto Serif TC', 'Noto Serif JP', serif;
+    font-weight: 900;
     box-sizing: border-box;
+}
+
+:lang(ja) {
+    font-family: 'Noto Serif JP', 'Noto Serif TC', serif;
 }
 
 html {
